@@ -1,0 +1,72 @@
+﻿<process name="Searching in Google" version="1.0" bpversion="6.9.0.26970" narrative="Google Search Object" byrefcollection="true" type="object" runmode="Exclusive" preferredid="638b7ff1-ffaa-4bd9-b9f7-f70cea14c725">
+  <appdef>
+    <element name="Google Search">
+      <id>650af025-77fc-46a8-81a3-f7f34714350a</id>
+      <group name="Element1">
+        <id>89e93101-9f61-4e7b-bbe9-2d297c769e4f</id>
+      </group>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>Win32Launch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>https://www.google.com/search?q=fc+barcelona&amp;rlz=1C1CHBF_enIN859IN859&amp;sxsrf=ALeKk00e0PDSIGPJY0aH4gY9GlouPHdHnA:1604999804658&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwi2kOKZ0vfsAhWNeX0KHaGdBNEQ_AUoA3oECAUQBQ&amp;biw=768&amp;bih=720&amp;dpr=1.25</value>
+        </parameter>
+        <parameter>
+          <name>WorkingDirectory</name>
+          <value>G:/Capgemini</value>
+        </parameter>
+        <parameter>
+          <name>NonInvasive</name>
+          <value>True</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+        <parameter>
+          <name>Options</name>
+          <value>
+          </value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="1d9071b9-8fdc-4c3c-99d6-1ac4c4906f42" name="Searching in Google" type="SubSheetInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="40160177-7066-422d-8440-183af7fec6f8" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>f33d6954-2d18-4a1f-9f7c-d63611c7ba1c</onsuccess>
+  </stage>
+  <stage stageid="fcdabe09-a93d-4e87-ba08-98a612146b5a" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="f33d6954-2d18-4a1f-9f7c-d63611c7ba1c" name="Navigate1" type="Navigate">
+    <loginhibit />
+    <display x="15" y="-15" />
+    <onsuccess>fcdabe09-a93d-4e87-ba08-98a612146b5a</onsuccess>
+  </stage>
+</process>
